@@ -4,9 +4,8 @@ const container = document.querySelector(".container");
 
 function makeDivs() {
     for (i = 0; i < 16; i++) {
-        const newDiv = document.createElement('div');
-        div.classList.add()
-        div.classList.add(".square");
-        container.appendChild(newDiv);
+        const div = document.createElement('div');
+        div.classList.add('.square');
+        container.appendChild(div);
     }
 }
