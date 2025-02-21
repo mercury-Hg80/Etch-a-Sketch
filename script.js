@@ -2,6 +2,7 @@ const container = document.querySelector(".container");
 
 function promptUser() {
     let request = prompt("Please enter the amount of squares per side for the new grid would you like:", "");
+
 }
 
 function makeDivs() {
@@ -13,12 +14,7 @@ function makeDivs() {
         div.addEventListener('mouseover', () => { 
             div.style.backgroundColor = 'black';
         })
-        /*
-        div.addEventListener('mouseout', () => {
-            div.style.backgroundColor = '#b2b6b2';
-
-        }) 
-        */
+       
     }
 
 }
