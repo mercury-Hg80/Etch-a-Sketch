@@ -1,11 +1,22 @@
 const container = document.querySelector(".container");
 
-function promptUser() {
-    let request = prompt("Please enter the amount of squares per side for the new grid would you like:", "");
+document.querySelector("button").onclick = function () {
+    let gridSize = prompt ('Please enter grid count (max 100):', '16'); 
+    gridSize = parseInt(gridSize); 
 
-}
+    if (gridSize && gridSize <= 100) {
+        makeDivs(gridSize); 
+    
+    } else {
+        alert("Invalid input! Enter a number LESS than 100.");
+    }
+
+ };
+
 
 function makeDivs() {
+
+    let numDivs = document.querySelector("numDivs").value;
     for (i = 0; i < 16; i++) {
         const div = document.createElement('div');
         div.classList.add('square');
