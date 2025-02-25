@@ -19,13 +19,12 @@ function makeDivs(gridSize) {
     container.innerHTML = "";
     container.style.setProperty("--grid-count", gridSize);
 
-    const squareSize = 960 / gridSize;
+    
 
     for (let i = 0; i < gridSize * gridSize; i++) {
         const div = document.createElement('div');
         div.classList.add('square');
-        div.style.width = `${squareSize}px`; 
-        div.style.height = `${squareSize}px`;
+        
       
 
         div.addEventListener('mouseover', () => { 
