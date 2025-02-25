@@ -14,9 +14,12 @@ document.querySelector("button").onclick = function () {
  };
 
 
-function makeDivs() {
+function makeDivs(gridSize) {
 
-    let numDivs = document.querySelector("numDivs").value;
+    container.innerHTML = "";
+
+    const squareSize = 300 / gridSize;
+
     for (i = 0; i < 16; i++) {
         const div = document.createElement('div');
         div.classList.add('square');
