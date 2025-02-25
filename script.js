@@ -20,17 +20,20 @@ function makeDivs(gridSize) {
 
     const squareSize = 300 / gridSize;
 
-    for (i = 0; i < 16; i++) {
+    for (i = 0; i < gridSize * gridSize; i++) {
         const div = document.createElement('div');
         div.classList.add('square');
-        container.appendChild(div);
+        div.style.width = `${squareSize}px`; 
+        div.style.height = `${squareSize}px`;
+      
 
         div.addEventListener('mouseover', () => { 
             div.style.backgroundColor = 'black';
-        })
+        });
        
     }
+    container.appendChild(div);
 
 }
 
-makeDivs();
+makeDivs(16);
